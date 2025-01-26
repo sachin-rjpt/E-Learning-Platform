@@ -1,0 +1,12 @@
+const express=require("express");
+const router=express.Router();
+const Controller=require("../controllers/admin.js");
+const { isAuth } = require("../middleware/isAuth.js");
+const { isAdmin } = require("../middleware/isAdmin.js");
+const {uploadFile}=require("../middleware/multer.js");
+router.get("/stats",isAuth,isAdmin,Controller.getAllStats);
+router.post("/course/new",isAuth,isAdmin,uploadFile,Controller.addCourse);
+router.post("/lecture/:id",isAuth,isAdmin,uploadFile,Controller.addLecture);
+router.delete("/lecture/:id",isAuth,isAdmin,Controller.deleteLecture);
+router.delete("/course/:id",isAuth,isAdmin,Controller.deleteCourse);
+module.exports=router;

@@ -1,0 +1,28 @@
+.course-description-page{
+    display: flex;
+    height: 90vh;
+    /* align-items: center; */
+  justify-content: center;
+    .course-description{
+        display: flex;
+        flex-direction: row;
+        height:20rem;
+        width: 30rem;
+        margin:5rem;
+        img{
+            border-radius: 10px;
+            height: 20rem;
+            width: 20rem;
+        }
+        @media(max-width:430px){
+            flex-direction: column;
+        }
+     .course-info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left:0.5rem;
+     }
+    }
+}

@@ -1,0 +1,45 @@
+.testimonials{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h2{
+        color: #8a4baf;
+      }
+      margin-bottom: 5rem;
+    .testimonial-cards{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 3rem 3rem 3rem;
+       .testimonial-card{
+         background-color: rgb(252, 252, 252);
+        box-shadow:1px 1px 1px rgb(200, 196, 196);
+         margin:1rem;
+         align-items: center;
+         justify-content: center;
+         padding:0.5rem;
+         width: 15rem;
+         border-radius: 10px;
+         .student-image{
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             img{
+                height: 5rem;
+                width: 5rem;
+                border-radius: 50px;
+             }
+         }
+         .st-name{
+            color:#8a4baf;
+         }
+         .st-position{
+            font-size: 0.7rem;
+         }
+         span{
+            font-weight: 700;
+            color: #8a4baf;
+         }
+       }
+    }
+}

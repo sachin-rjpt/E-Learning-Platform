@@ -1,0 +1,10 @@
+const express =require("express");
+const router=express.Router();
+const Controller=require("../controllers/course.js");
+const { isAuth } = require("../middleware/isAuth.js");
+router.get("/mycourses",isAuth,Controller.getMyCourses);
+router.get("/all",Controller.allCourses);
+router.get("/:id",Controller.getCourse);
+router.post("/checkout/:id",isAuth,Controller.checkout);
+router.post("/verification/:id",isAuth,Controller.paymentVerification);
+module.exports=router;

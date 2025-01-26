@@ -1,0 +1,126 @@
+/* lecture.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .lectures-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .left,
+  .right {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px;
+  }
+  
+  .left {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left video {
+    border-radius: 8px;
+    border: 2px solid #8a4baf;
+    background-color: #000;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .lectures {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .lecture {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: #8a4baf;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .lecture:hover {
+    background-color: #6e3e8e;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    background-color: #8a4baf;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    align-self: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #6e3e8e;
+  }
+  
+  .btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  @media (min-width: 768px) {
+    .lectures-page {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 40px;
+    }
+  
+    .left,
+    .right {
+      width: 48%;
+    }
+  
+    .lectures {
+      max-height: none;
+    }
+  }
+  
+.add-lecture-page{
+    display: flex;
+    height: 90vh;  
+    .form{
+         height: 30rem;
+         width: 30rem;
+         box-shadow: none;
+    }
+}
+.delete{
+   margin-left: 30rem;
+   font-size: larger;
+   color: white;
+}
